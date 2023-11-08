@@ -1,0 +1,42 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;800&display=swap');
+/* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body * {
+   font-family: 'Syne', sans-serif;
+   width: 100%;
+}
+
+/*header*/
+#header * {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: 100%;
+   height: 80px;
+}
+
+#menu * {
+   display: flex;
+   flex-direction: row;
+   text-decoration: none;
+   font-size: 16px;
+   justify-content: center;
+}
+
+
+#branding-img * {
+   height: 50px;
+   width: 300px;
+   align-items: center;
+}
+
+/*footer*/
+#footer * {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   height: 60px;
+   text-decoration: none;
+   color: black;
+}
