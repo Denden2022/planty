@@ -1,9 +1,20 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;800&display=swap');
-/* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
+/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body * {
    font-family: 'Syne', sans-serif;
    width: 100%;
+}
+
+:root {
+   --background-color-main: #ECE2DA;
+   --green-color: #3B8E46;
+   --pink-color-button: #DC9F96;
+   --color-button-command: #E0B9B4;
+}
+
+main * {
+   background-color: var(--background-color-main);
 }
 
 /*header*/
@@ -21,8 +32,8 @@ body * {
    text-decoration: none;
    font-size: 16px;
    justify-content: center;
+   margin-left: 10px;
 }
-
 
 #branding-img * {
    height: 50px;
@@ -39,4 +50,22 @@ body * {
    height: 60px;
    text-decoration: none;
    color: black;
+}
+
+/*page Accueil*/
+.wp-block-column h1 {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   font-size: 38px;
+   color: #3B8E46;
+   font-weight: bold;
+   width: 781px;
+   height: 92px;
+}
+
+.wp-block-column {
+   display: grid;
+   grid-template-columns: 400px 400px;
+   justify-content: center;
 }
