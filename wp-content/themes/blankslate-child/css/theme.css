@@ -1,8 +1,10 @@
   @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;800&display=swap');
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
-body * {
+body {
    font-family: 'Syne', sans-serif;
    width: 100%;
+   margin: auto;
+   max-width: 1440px;
 }
 
 :root {
@@ -45,6 +47,12 @@ body * {
    height: 60px;
    text-decoration: none;
    color: black;
+   font-weight: 600;
+}
+
+.footer-text {
+   margin: 0 200px 30px 200px;
+   text-align: justify;
 }
 
 /*page Accueil*/
@@ -54,15 +62,15 @@ body * {
    font-size: 38px;
    color: var(--green-color);
    font-weight: bold;
-   width: 40%;
+   width: 60%;
    height: 92px;
 }
 
 .img-leaf-left img {
    position: absolute;
    z-index: 2;
-   left: 820px;
-   top: 700px;
+   left: 970px;
+   top: 420px;
 
 }
 
@@ -74,8 +82,8 @@ body * {
 .img-leaf-right img {
    position: absolute;
    z-index: 2;
-   right: 800px;
-   top: 700px;
+   right: 940px;
+   top: 420px;
 
 }
 
@@ -91,7 +99,7 @@ body * {
 }
 
 .title-tast {
-   margin: 100px 0 20px 0;
+   margin: 70px 0 20px 0;
    font-size: 30px;
    color: #D2776A;
    font-weight: bold;
@@ -109,9 +117,13 @@ body * {
    margin-bottom: 50px;
 }
 
-.button-command a {
-   padding: 30px 0 30px 0;
+.button-order a {
+   padding: 20px 0 20px 0;
    margin-bottom: 50px;
+}
+
+.button-order .is-style-fill {
+   padding: 0 260px 0 260px;
 }
 
 .title-comments {
@@ -131,7 +143,7 @@ body * {
    margin-bottom: 100px;
    width: 100%;
    justify-content: space-around;
-   padding: 0 200px 0 200px;
+   padding: 0 140px 0 140px;
 }
 
 .img-comments h2 {
@@ -142,33 +154,175 @@ body * {
 /*page Nous rencontrer*/
 .title-second-page {
    text-align: center;
-   justify-content: center;
    padding: 100px 0 100px 0; 
    font-size: 38px;
    color: var(--pink-color-button);
    font-weight: bold;
-   width: 781px;
    height: 92px;
 }
 
 .bloc-meet {
    position: relative;
    z-index: 2;
-   right: 500px;
+   right:400px;
+   padding-bottom: 50px;
+   padding-top: 90px;
 }
 
+
 .bloc-flower {
-position: absolute;
+   position: absolute;
    z-index: 1;
-   left: 500px;
+   left: 630px;
+   padding-top: 70px;
 }
 
 .bloc-team {
    display: flex;
    flex-direction: row;
    justify-content: center;
+   padding: 50px 150px 0 150px;
+   position: relative;
+   z-index: 2;
 }
 
-.bloc-form {
+.leaf-team {
+   position: relative;
+   z-index: 1;
+   top: 20px;
+}
+
+.img-team {
+   padding-top: 70px;
+}
+
+.img-team-solo h3 {
+   margin: 20px 0 20px 0;
+}
+
+.form-contact {
    justify-content: center;
+}
+
+.wpcf7-form label {
+   font-size: 20px;
+   }
+
+.img-form-meet{
+   position: relative;
+   z-index: 1;
+   right: 70px;
+   bottom: 200px;
+}
+   
+/*page Commander*/
+.title-page-order {
+   text-align: center;
+   padding: 100px 0 100px 0; 
+   font-size: 38px;
+   color: white;
+   font-weight: bold;
+   height: 92px;
+}
+
+.container-order {
+   background-color: var(--green-color);
+   padding: 0 300px 0 300px;
+}
+
+.title-your-order {
+   margin: 50px 0 50px 0;
+}
+.button-counter {
+   margin: 20px 0 30px 20px;
+}
+/*formulaires pages*/
+.container-form {
+   margin: 0 200px 0 0;
+}
+.big-title-form {
+   margin: 50px 0 40px 0;
+}
+.form {
+   padding: 15px 0;
+   margin: 10px 0 40px 0;
+   height: 71px;
+   width: 383px;
+   font-size: 20px;
+   border-radius: 7px;
+   border: white;
+}
+.wpcf7 {
+   color: white;
+   font-weight: ;
+}
+
+#title-line1 {
+   border-radius: 7px;
+}
+
+#title-line2 {
+   border-radius: 7px;
+}
+#title-line3 {
+   border-radius: 7px;
+}
+#title-line4 {
+   border-radius: 7px;
+}
+#title-line5 {
+   border-radius: 7px;
+}
+
+.title-form2 {
+   position: relative;
+   z-index: 2;
+   margin: 10px 0 20px 0;
+   height: 237px;
+   width: 383px;
+   font-size: 20px;
+   font-weight: bold;
+   border-radius: 7px;
+   border: white;
+}
+
+#button-submit {
+   margin: 10px 0 20px 0;
+   height: 55px;
+   width: 198px;
+   color: white;
+   font-size: 15px;
+   background-color: var(--pink-color-button);
+   border: white;
+   border-radius: 7px;
+}
+
+.button-order {
+   margin: 50px 0 50px 0;
+}
+
+.line-command {
+   position: relative;
+   z-index: 2;
+   left: 50px;
+   top: 20px;
+   height: 447px;
+   width: 1px;
+
+}
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Large medium and Medium devices (tablets, less/equal than 1024px) (and large devices max-width 1440px)*/
+/*media queries sur mobile*/
+
+@media (max-width: 1024px) {
+   .img-leaf-left img {
+      left: 230px;
+      top: 250px;
+   }
+   .img-leaf-right img {
+      right: 210px;
+      top: 250px;
+   }
 }
