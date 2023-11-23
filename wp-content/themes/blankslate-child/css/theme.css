@@ -11,7 +11,8 @@ body {
    --background-color-main: #ECE2DA;
    --green-color: #3B8E46;
    --pink-color-button: #DC9F96;
-   --color-button-command: #E0B9B4;
+   --color-button-order: #E0B9B4;
+   --color-button-nav-hover-order: #C02E44;
 }
 
 /*header*/
@@ -32,46 +33,59 @@ body {
    margin-left: 10px;
 }
 
+#menu-item-51 a{
+   color: black;
+}
+
+#menu-item-51 a:hover {
+   font-weight: 600;
+   font-size: 13px;
+   color: black;
+}
+
+.menu-item-52 a {
+   background-color: var(--pink-color-button);
+   color: white;
+   font-size: 16px;
+}
+
+.menu-item-52 a:hover {
+   background-color: var(--color-button-nav-hover-order);
+}
 #branding-img * {
    height: 50px;
    width: 300px;
    align-items: center;
 }
 
-/*footer*/
-#footer * {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-   height: 60px;
-   text-decoration: none;
-   color: black;
-   font-weight: 600;
-}
-
-.footer-text {
-   margin: 0 200px 30px 200px;
-   text-align: justify;
-}
-
 /*page Accueil*/
+.bloc-title-can-color {
+   background-color: var(--background-color-main);
+}
+
+.bloc-can-color {
+   background-color: var(--background-color-main);
+   clip-path: ellipse(2000px 100% at top);
+}
+
 .title-accueil {
    text-align: center;
    margin: auto;
-   font-size: 38px;
+   margin-top: 90px;
+   font-size: 36px;
    color: var(--green-color);
-   font-weight: bold;
+   font-weight: 800;
    width: 60%;
    height: 92px;
+   line-height: 40px;
+   background-color: var(--background-color-main);
 }
 
 .img-leaf-left img {
    position: absolute;
    z-index: 2;
-   left: 970px;
-   top: 420px;
-
+   left: 760px;
+   top: 530px;
 }
 
 .img-can {
@@ -82,9 +96,8 @@ body {
 .img-leaf-right img {
    position: absolute;
    z-index: 2;
-   right: 940px;
-   top: 420px;
-
+   right: 740px;
+   top: 540px;
 }
 
 .title-plants {
@@ -96,6 +109,11 @@ body {
 .p-plants {
    font-size: 20px;
    margin: 50px 0 100px 0;
+}
+
+.bloc-taste-color {
+   background-color: var(--background-color-main);
+   clip-path: ellipse(2800px 100% at top);
 }
 
 .title-tast {
@@ -114,12 +132,26 @@ body {
    display: flex;
    flex-direction: row;
    justify-content: center;
-   margin-bottom: 50px;
+   margin-bottom: 40px;
+}
+
+.img-fruits2 {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
 }
 
 .button-order a {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
    padding: 20px 0 20px 0;
-   margin-bottom: 50px;
+   margin-bottom: 20px;
+   background-color: var(--color-button-order);
+}
+
+.button-order a:hover {
+   background-color: var(--color-button-nav-hover-order);
 }
 
 .button-order .is-style-fill {
@@ -130,7 +162,7 @@ body {
    font-size: 30px;
    color: var(--green-color);
    font-weight: bold;
-   margin: 200px 0 100px 0;
+   margin: 200px 0 50px 0;
    justify-content: center;
 }
 
@@ -154,7 +186,7 @@ body {
 /*page Nous rencontrer*/
 .title-second-page {
    text-align: center;
-   padding: 100px 0 100px 0; 
+   padding: 100px 0 70px 0; 
    font-size: 38px;
    color: var(--pink-color-button);
    font-weight: bold;
@@ -165,35 +197,38 @@ body {
    position: relative;
    z-index: 2;
    right:400px;
-   padding-bottom: 50px;
-   padding-top: 90px;
+   padding-bottom: 80px;
+   padding-top: 120px;
 }
 
+.bloc-meet-radius {
+   clip-path: ellipse(1500px 100% at top);
+}
 
 .bloc-flower {
    position: absolute;
    z-index: 1;
-   left: 630px;
-   padding-top: 70px;
+   left: 500px;
+   padding-top: 100px;
 }
 
 .bloc-team {
    display: flex;
    flex-direction: row;
    justify-content: center;
-   padding: 50px 150px 0 150px;
-   position: relative;
-   z-index: 2;
+   padding: 50px 300px 0 300px;
+   margin-bottom: 70px;
 }
 
 .leaf-team {
-   position: relative;
+   position: absolute;
    z-index: 1;
-   top: 20px;
+   right: 420px;
+   bottom: 25px;
 }
 
 .img-team {
-   padding-top: 70px;
+   padding-top: 50px;
 }
 
 .img-team-solo h3 {
@@ -208,13 +243,36 @@ body {
    font-size: 20px;
    }
 
+
 .img-form-meet{
    position: relative;
    z-index: 1;
-   right: 70px;
-   bottom: 200px;
+   right: 80px;
+   bottom: 150px;
 }
-   
+
+#title-email {
+   margin-bottom: 40px;
+}
+
+#button-submit {
+   margin-top: 10px;
+   margin-bottom: -50px;
+   height: 55px;
+   width: 198px;
+   color: white;
+   font-size: 15px;
+   background-color: var(--color-button-order);
+   border: white;
+   border-radius: 7px;
+}
+
+.wpcf7-form p {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
 /*page Commander*/
 .title-page-order {
    text-align: center;
@@ -230,44 +288,54 @@ body {
    padding: 0 300px 0 300px;
 }
 
+.line-title-order {
+   opacity: 1;
+}
+
 .title-your-order {
    margin: 50px 0 50px 0;
 }
+
 .button-counter {
-   margin: 20px 0 30px 20px;
+   margin: 20px 80px 30px 75px;
+   padding: 12px 0 12px 0;
+   border: solid white;
+   background-color: white;
 }
-/*formulaires pages*/
-.container-form {
-   margin: 0 200px 0 0;
-}
+
+/*formulaires des pages, styles communs*/
+
 .big-title-form {
    margin: 50px 0 40px 0;
+   width: max-content;
 }
+
 .form {
    padding: 15px 0;
-   margin: 10px 0 40px 0;
+   margin-top: 10px;
    height: 71px;
    width: 383px;
    font-size: 20px;
    border-radius: 7px;
    border: white;
 }
-.wpcf7 {
-   color: white;
-}
 
 #title-line1 {
    border-radius: 7px;
+   margin-bottom: 40px;
 }
 
 #title-line2 {
    border-radius: 7px;
+   margin-bottom: 40px;
 }
 #title-line3 {
    border-radius: 7px;
+   margin-bottom: 40px;
 }
 #title-line4 {
    border-radius: 7px;
+   margin-bottom: 40px;
 }
 #title-line5 {
    border-radius: 7px;
@@ -285,17 +353,6 @@ body {
    border: white;
 }
 
-#button-submit {
-   margin: 10px 0 20px 0;
-   height: 55px;
-   width: 198px;
-   color: white;
-   font-size: 15px;
-   background-color: var(--pink-color-button);
-   border: white;
-   border-radius: 7px;
-}
-
 .button-order {
    margin: 50px 0 50px 0;
 }
@@ -307,21 +364,175 @@ body {
    top: 20px;
    height: 447px;
    width: 1px;
-
+   opacity: 0.7;
 }
+
+/*formulaires commander*/
+.bloc-form-order {
+   display: grid;
+   grid-template-columns: 380px 380px;
+   gap: 40px;
+   margin-top: 40px;
+}
+
+
+.informations h1 {
+   font-size: 30px;
+   font-weight: 200;
+}
+
+.informations {
+   color: white;
+}
+
+.informations h1 {
+   margin-bottom: 30px;
+}
+
+.delivery h1 {
+   font-size: 30px;
+   font-weight: 200;
+   margin-bottom:30px;
+   margin-left: -40px;
+}
+
+#button-form-order {
+   padding: 20px 30px 20px 30px;
+   background-color: var(--color-button-order);
+   border-radius: 5px;
+   border: white;
+   color: white;
+   font-size: 15px;
+   margin-top: 40px;
+   margin-bottom: 50px;
+}
+
+#button-form-order:hover {
+   background-color: var(--color-button-nav-hover-order);
+}
+
+.delivery {
+   border-left: solid rgba(255, 255, 255, 0.4);
+   padding-left: 80px;
+   color: white;
+}
+
+/*footer*/
+#footer * {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   height: 60px;
+   text-decoration: none;
+   color: black;
+   font-weight: 600;
+}
+
+.footer-text {
+   margin: 0 200px 30px 200px;
+   text-align: justify;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-/* Large medium and Medium devices (tablets, less/equal than 1024px) (and large devices max-width 1440px)*/
-/*media queries sur mobile*/
-
-@media (max-width: 1024px) {
+/* Mode desktop, tablette et téléphone à partir de 320px */
+/*mobile less/equal than 480px, tablet less/equal than 768px, desktop less/equal than 1600px*/
+@media (max-width: 1600px) {
    .img-leaf-left img {
-      left: 230px;
-      top: 250px;
+      left: 460px;
+      top: 520px;
    }
    .img-leaf-right img {
-      right: 210px;
-      top: 250px;
+      right: 430px;
+      top: 520px;
+   }
+   .bloc-flower {
+      position: absolute;
+      z-index: 1;
+      left: 120px;
+      padding-top: 80px;   
+   }
+   .leaf-team {
+      right: 100px;
+      bottom: 940px;
+   }
+   
+
+}
+
+@media (max-width: 1440px) {
+   
+}
+
+@media (min-width: 320px) and (max-width: 1440px) {
+   /*page Accueil*/
+   #menu * {
+      display: grid;
+      grid-template-columns: 10px 10px 10px;
+      gap: 70px;
+      justify-content: flex-start;
+      width: 100%;
+      font-size: 13px;
+   }
+   #header * {
+      height: 50px;
+      width: 80px;
+   }
+   .wp-block-heading {
+      margin-top: 10px;
+      font-size: 10px;
+   }
+   .img-leaf-left img {
+     display: none;
+   }
+   .img-leaf-right img {
+      display: none;
+   }
+   .bloc-title-can-color .title-accueil {
+      display: none;
+   }
+   .button-order .is-style-fill {
+      padding: 0;
+   }
+   .img-comments {
+      justify-content: center;
+      padding: 30px;
+ 
+   }
+   .bloc-one-comment img {
+      width: max-content;
+   }
+
+/*page Nous rencontrer*/
+   .leaf-team {
+      display: none;
+   }
+   .bloc-meet {
+      right: 0;
+      padding-bottom: 80px;
+      padding-top: 120px;
+   }
+   .bloc-team {
+      padding: 0;
+   }
+   .form-contact p {
+      min-width: max-content;
+      margin: 10px;
+   }
+   .img-cans {
+      display: none;
+   }
+
+/*page Commander*/
+   .container-order {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      object-fit: cover;
+      width: fit-content;
+      padding: 10px;
    }
 }
