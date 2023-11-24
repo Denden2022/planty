@@ -307,12 +307,16 @@ body {
    margin: 50px 0 50px 0;
 }
 
-.button-counter {
-   margin: 20px 80px 30px 75px;
-   padding: 12px 0 12px 0;
-   border: solid white;
-   background-color: white;
+.button-number {
+   margin: 20px 0 30px 0;
 }
+.wpcf7-text {
+   border: white;
+   width: 30px;
+   height: 43px;
+   padding-left: 10px;
+}
+
 
 /*formulaires des pages, styles communs*/
 
