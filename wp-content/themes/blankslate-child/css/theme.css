@@ -473,6 +473,28 @@ body {
       bottom: 940px;
    }
 
+@media (min-width: 1500px ){
+/*page Accueil*/
+.img-leaf-left img {
+   left: 36%;
+   top: 480px;
+}
+.img-leaf-right img {
+   right: 35%;
+   top: 480px;
+}
+.bloc-flower {
+   position: absolute;
+   z-index: 1;
+   left: 480px;
+   padding-top: 80px;   
+}
+.leaf-team {
+   right: 420px;
+   bottom: 920px;
+}
+}
+
 
 @media (min-width: 320px) and (max-width: 768px) {
    /*page Accueil*/
@@ -504,6 +526,15 @@ body {
    }
    .img-leaf-right img {
       display: none;
+   }
+   .img-fruits {
+      width: 300px;
+      margin: auto;
+   }
+   .img-fruits2 {
+      padding-top: 60px;
+      width: 300px;
+      margin: auto;
    }
    .img-fruits p {
       font-size: 20px;
